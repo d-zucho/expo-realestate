@@ -22,6 +22,10 @@ const SignIn = () => {
     return <Redirect href='/' />
   }
 
+  if (!loading && isLoggedIn) {
+    return <Redirect href='/' />
+  }
+
   const handleLogin = async () => {
     const result = await login()
 
