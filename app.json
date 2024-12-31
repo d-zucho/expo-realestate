@@ -13,7 +13,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
@@ -28,9 +28,23 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+
+          "resizeMode": "cover",
+          "backgroundColor": "#ffffff",
+          "enableFullScreenImage_legacy": true
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            {
+              "Rubik-Bold": "./assets/fonts/Rubik-Bold.ttf",
+              "Rubik-ExtraBold": "./assets/fonts/Rubik-ExtraBold.ttf",
+              "Rubik-Medium": "./assets/fonts/Rubik-Medium.ttf",
+              "Rubik-SemiBold": "./assets/fonts/Rubik-SemiBold.ttf"
+            }
+          ]
         }
       ]
     ],
